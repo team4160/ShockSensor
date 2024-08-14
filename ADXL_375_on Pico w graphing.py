@@ -20,7 +20,7 @@ active_change = accelerometer._read_register_unpacked(_REG_DATA_FORMAT)
 #accelerometer._write_register_byte(_REG_DATA_FORMAT, _INT_ACT) # ACT bit
 #active_change |= _INT_ACT
 accelerometer._write_register_byte(_REG_DATA_FORMAT, active_change | 0b00001011) #0b00001011 comes from the adafruit arduino library linked by ty which supposedly fixes the bits at _reg_data_format for 25+ g
-# playing around with sampling rates. 64 works.
+# playing around with sampling rates. 32 works but can be challenging to CTL-D 64 works but cant be interrupted easily, >64 needs testing and optimzation.
 samples_per_sec = 64
 sample_sec = 1/samples_per_sec
 
