@@ -27,7 +27,15 @@ try:
 except:
     print("Failed to Mount")
 
+data_list =[(0,0,0)]
+data_list.append((1,1,1))
 
-
+#write out data to SD card.
+with open("/sd/data.txt", "a") as data_file:
+    data_file.write("Start of Event\n")
+    for line in data_list:
+        data_file.write(f"{line}\n")
+    data_file.write("End of Event\n")
+    data_file.close()
 
 print("Done!")
