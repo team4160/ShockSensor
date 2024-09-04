@@ -38,4 +38,7 @@ Assume that you also have wire, solder, etc..
 3D printable case file supplied as well here as a .3mf file and fusion 360 source.
 You'll need M2 and M3 screws for the case.
 
+Video of it in testing:
+https://youtu.be/Hgpz41B1Njg
+
 
