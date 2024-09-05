@@ -2,8 +2,8 @@ A shock sensor for pre-season events logging to SD card.
 credit to the zebracorns:
 https://github.com/FRC900/2023RobotCode/blob/main/zebROS_ws/src/adafruit_adxl37x/src/Ada_the_fruit_on_the_acceleratormator.py
 
-Porting to pico 2040
-See circut diagram and case
+We Ported it over to pico 2040, added an SD Card writer, and some LED's.
+See circut diagram and case files to make and print.
 
 The default startup is to light all lights (1-5), calculate a "Noise" threshold (2-3 lit), then wait for the first shock event (2,3,4 Lit).
 This allows you to sync up multiple units all to the same "time_sync_event".
@@ -41,4 +41,4 @@ You'll need M2 and M3 screws for the case.
 Video of it in testing:
 https://youtu.be/Hgpz41B1Njg
 
-
+Hopefully we can get some crash data from all your robots!
